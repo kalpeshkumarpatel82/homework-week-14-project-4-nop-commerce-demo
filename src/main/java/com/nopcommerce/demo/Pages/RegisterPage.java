@@ -72,90 +72,90 @@ public class RegisterPage extends Utility {
     WebElement repeatPasswordError;
 
     public String getPageHeader() {
-        Reporter.log("Getting Page Header " + pageHeader.toString());
+        Reporter.log("Getting Page Header : " + pageHeader.toString());
         return getTextFromElement(pageHeader);
     }
 
     public void setGenderMaleRadio() {
-        Reporter.log("Clicking on Male Gender Radio " + genderMaleRadio.toString());
+        Reporter.log("Clicking on Male Gender Radio : " + genderMaleRadio.toString());
         clickOnElement(genderMaleRadio);
     }
 
     public void setGenderFemaleRadio() {
-        Reporter.log("Clicking on Female Gender Radio " + genderFemaleRadio.toString());
+        Reporter.log("Clicking on Female Gender Radio  : " + genderFemaleRadio.toString());
         clickOnElement(genderFemaleRadio);
     }
 
     public void setFirstName(String text) {
-        Reporter.log("Sending text to FirstName " + firstName.toString());
+        Reporter.log("Sending FirstName  : "+text+" to " + firstName.toString());
         sendTextToElement(firstName, text);
     }
 
     public void setLastName(String text) {
-        Reporter.log("Sending text to FirstName " + lastName.toString());
+        Reporter.log("Sending text to FirstName : "+text+" to " + lastName.toString());
         sendTextToElement(lastName, text);
     }
 
     public void setBirthDate(String day, String month, String year) {
-        Reporter.log("Selecting BirthDate " + birthDay.toString() + " " + birthMonth.toString() + " " + birthYear.toString());
+        Reporter.log("Selecting BirthDate : " + day + "/" + month + "/" + year + " to " + birthDay.toString() + " " + birthMonth.toString() + " " + birthYear.toString());
         selectByVisibleTextFromDropDown(birthDay, day);
         selectByVisibleTextFromDropDown(birthMonth, month);
         selectByVisibleTextFromDropDown(birthYear, year);
     }
 
     public void setEmailAddress(String text) {
-        Reporter.log("Sending text to email " + emailAddress.toString());
-        int random = (int)(Math.random()*10000);
-        sendTextToElement(emailAddress, text+random+"@domain.co.uk");
+        Reporter.log("Sending email " + text + " to " + emailAddress.toString());
+        int random = (int) (Math.random() * 10000);
+        sendTextToElement(emailAddress, text + random + "@domain.co.uk");
     }
 
     public void setPassword(String text) {
-        Reporter.log("Sending text to Password " + password.toString());
+        Reporter.log("Sending Password " + text + " to " + password.toString());
         sendTextToElement(password, text);
     }
 
     public void setRepeatPassword(String text) {
-        Reporter.log("Sending text to Confirm Password " + repeatPassword.toString());
+        Reporter.log("Sending Confirm Password " + text + " to " + repeatPassword.toString());
         sendTextToElement(repeatPassword, text);
     }
 
     public void setRegisterButton() {
-        Reporter.log("Clicking on Register " + registerButton.toString());
+        Reporter.log("Clicking on Register : " + registerButton.toString());
         clickOnElement(registerButton);
     }
 
     public String getRegistrationVerification() {
-        Reporter.log("Getting Registration confirm " + registrationVerification.toString());
+        Reporter.log("Getting Registration confirm : " + registrationVerification.toString());
         return getTextFromElement(registrationVerification);
     }
 
     public void setContinueButton() {
-        Reporter.log("Clicking on continue " + continueButton.toString());
+        Reporter.log("Clicking on continue : " + continueButton.toString());
         clickOnElement(continueButton);
     }
 
     public String getFirstNameErrorMessage() {
-        Reporter.log("Getting FirstName Error " + firstNameError.toString());
+        Reporter.log("Getting FirstName Error : " + firstNameError.toString());
         return getTextFromElement(firstNameError);
     }
 
     public String getLastNameErrorMessage() {
-        Reporter.log("Getting LastName Error " + lastNameError.toString());
+        Reporter.log("Getting LastName Error : " + lastNameError.toString());
         return getTextFromElement(lastNameError);
     }
 
     public String getEmailErrorMessage() {
-        Reporter.log("Getting Email Error " + emailError.toString());
+        Reporter.log("Getting Email Error : " + emailError.toString());
         return getTextFromElement(emailError);
     }
 
     public String getPasswordErrorMessage() {
-        Reporter.log("Getting Password Error " + passwordError.toString());
+        Reporter.log("Getting Password Error : " + passwordError.toString());
         return getTextFromElement(passwordError);
     }
 
     public String getRepeatPasswordErrorMessage() {
-        Reporter.log("Getting Repeat Password Error " + repeatPasswordError.toString());
+        Reporter.log("Getting Repeat Password Error : " + repeatPasswordError.toString());
         return getTextFromElement(repeatPasswordError);
     }
 

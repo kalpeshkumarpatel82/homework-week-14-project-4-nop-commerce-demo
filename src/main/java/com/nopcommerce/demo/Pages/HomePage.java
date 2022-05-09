@@ -53,62 +53,62 @@ public class HomePage extends Utility {
 
 
     public void setComputerLink() {
-        Reporter.log("Clicking on Computer Link " + computerLink.toString());
+        Reporter.log("Clicking on Computer Link : " + computerLink.toString());
         clickOnElement(computerLink);
     }
 
     public void setElectronicsLink() {
-        Reporter.log("Clicking on Electronics Link " + electronicsLink.toString());
+        Reporter.log("Clicking on Electronics Link : " + electronicsLink.toString());
         clickOnElement(electronicsLink);
     }
 
     public void setApparelLink() {
-        Reporter.log("Clicking on Appareal Link " + apparelLink.toString());
+        Reporter.log("Clicking on Appareal Link : " + apparelLink.toString());
         clickOnElement(apparelLink);
     }
 
     public void setDdLink() {
-        Reporter.log("Clicking on Digital Download Link " + ddLink.toString());
+        Reporter.log("Clicking on Digital Download Link : " + ddLink.toString());
         clickOnElement(ddLink);
     }
 
     public void setBooksLink() {
-        Reporter.log("Clicking on Books Link " + booksLink.toString());
+        Reporter.log("Clicking on Books Link : " + booksLink.toString());
         clickOnElement(booksLink);
     }
 
     public void setJewerlyrLink() {
-        Reporter.log("Clicking on Jewerly Link " + jewerlyrLink.toString());
+        Reporter.log("Clicking on Jewerly Link : " + jewerlyrLink.toString());
         clickOnElement(jewerlyrLink);
     }
 
     public void setGCLink() {
-        Reporter.log("Clicking on Gift Card Link " + gcLink.toString());
+        Reporter.log("Clicking on Gift Card Link : " + gcLink.toString());
         clickOnElement(gcLink);
     }
 
     public void setLoginLink() {
-        Reporter.log("Clicking on login Link " + loginLink.toString());
+        Reporter.log("Clicking on login Link : " + loginLink.toString());
         clickOnElement(loginLink);
     }
 
     public void setRegisterLink() {
-        Reporter.log("Clicking on Register Link " + registerLink.toString());
+        Reporter.log("Clicking on Register Link : " + registerLink.toString());
         clickOnElement(registerLink);
     }
 
     public void setLogo() {
-        Reporter.log("Clicking on Logo Link " + logo.toString());
+        Reporter.log("Clicking on Logo Link : " + logo.toString());
         clickOnElement(logo);
     }
 
     public void setMyAccount() {
-        Reporter.log("Clicking on MyAccount Link " + myAccount.toString());
+        Reporter.log("Clicking on MyAccount Link : " + myAccount.toString());
         clickOnElement(myAccount);
     }
 
     public void setLogOutLink() {
-        Reporter.log("Clicking on logout Link " + logOutLink.toString());
+        Reporter.log("Clicking on logout Link : " + logOutLink.toString());
         clickOnElement(logOutLink);
     }
 

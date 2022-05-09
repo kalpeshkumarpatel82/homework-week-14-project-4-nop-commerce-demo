@@ -51,7 +51,7 @@ public class CustomListeners implements ITestListener {
     public void onStart(ITestContext iTestContext) {
         reporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/extent.html");
         reporter.config().setDocumentTitle("Automation Report");
-        reporter.config().setReportName("Automation.com");
+        reporter.config().setReportName("demo.nopcommerce.com");
         reporter.config().setTheme(Theme.DARK);
         reports = new ExtentReports();
         reports.attachReporter(reporter);

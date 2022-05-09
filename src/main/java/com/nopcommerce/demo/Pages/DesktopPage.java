@@ -27,26 +27,26 @@ public class DesktopPage extends Utility {
     WebElement buildYourComputer;
 
     public String getPageHeader() {
-        Reporter.log("Getting Page Header " + pageHeader.toString());
+        Reporter.log("Getting Page Header : " + pageHeader.toString());
         return getTextFromElement(pageHeader);
     }
 
     public void setProductOrderBy(String text) {
-        Reporter.log("Clicking on Product Order by " + productOrderBy.toString());
+        Reporter.log("Clicking on Product Order by : "+text+ "to " +productOrderBy.toString());
         selectByVisibleTextFromDropDown(productOrderBy, text);
     }
 
     public void setProductDisplayBy(String text) {
-        Reporter.log("Clicking on Product Display by " + productDisplayBy.toString());
+        Reporter.log("Clicking on Product Display by : "+text+ "to " +productDisplayBy.toString());
         selectByVisibleTextFromDropDown(productDisplayBy, text);
     }
 
     public void setListView(String text) {
-        Reporter.log("Clicking on List View " + listView.toString());
+        Reporter.log("Clicking on List View : " + listView.toString());
         clickOnElement(listView);
     }
     public void setBuildYourComputer() {
-        Reporter.log("Clicking on Build Your Compuner " + buildYourComputer.toString());
+        Reporter.log("Clicking on Build Your Computer : " + buildYourComputer.toString());
         clickOnElement(buildYourComputer);
     }
 

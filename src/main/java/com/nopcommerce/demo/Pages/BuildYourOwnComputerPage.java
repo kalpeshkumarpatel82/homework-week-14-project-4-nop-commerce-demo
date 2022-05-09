@@ -64,25 +64,25 @@ public class BuildYourOwnComputerPage extends Utility {
 
     public void setSelectHDD(String text) {
         if (text.contains("320 GB")) {
-            Reporter.log("Setting HDD " + select320GBHDD.toString());
+            Reporter.log("Setting HDD : " + text + "to " + select320GBHDD.toString());
             clickOnElement(select320GBHDD);
         } else if (text.contains("400 GB [+$100.00]")) {
-            Reporter.log("Setting HDD " + select400GBHDD.toString());
+            Reporter.log("Setting HDD : " + text + "to " + select400GBHDD.toString());
             clickOnElement(select400GBHDD);
         }
     }
 
     public void setSoftware(String text) {
         if (text == "Microsoft Office [+$50.00]") {
-            Reporter.log("Setting software " + selectMSOffice.toString());
+            Reporter.log("Setting software : " + text + "to " + selectMSOffice.toString());
             clickOnElement(selectMSOffice);
         }
         if (text == "Acrobat Reader [+$10.00]") {
-            Reporter.log("Setting software " + selectAdobe.toString());
+            Reporter.log("Setting software : " + text + "to " + selectAdobe.toString());
             clickOnElement(selectAdobe);
         }
         if (text == "Total Commander [+$5.00]") {
-            Reporter.log("Setting software " + selectTotalCommander.toString());
+            Reporter.log("Setting software : " + text + "to " + selectTotalCommander.toString());
             clickOnElement(selectTotalCommander);
         }
 
@@ -91,22 +91,22 @@ public class BuildYourOwnComputerPage extends Utility {
 
     public void setSelectOS(String text) {
         if (text == "Vista Home [+$50.00]") {
-            Reporter.log("Setting OS " + selectVistaHome.toString());
+            Reporter.log("Setting OS : " + text + "to " + selectVistaHome.toString());
             clickOnElement(selectVistaHome);
         }
         if (text == "Vista Premium [+$60.00]") {
-            Reporter.log("Setting HDD " + selectVistaPremium.toString());
+            Reporter.log("Setting HDD : " + text + "to " + selectVistaPremium.toString());
             clickOnElement(selectVistaPremium);
         }
     }
 
     public void setClickOnAddToCartButton() {
-        Reporter.log("Clicking on Add to cart " + clickOnAddToCartButton.toString());
+        Reporter.log("Clicking on Add to cart : " + clickOnAddToCartButton.toString());
         clickOnElement(clickOnAddToCartButton);
     }
 
     public String getInfoFromGreenBar() {
-        Reporter.log("Getting Confirm Message After adding to cart " + infoFromGreenBar.toString());
+        Reporter.log("Getting Confirm Message After adding to cart : " + infoFromGreenBar.toString());
         return getTextFromElement(infoFromGreenBar);
     }
 
